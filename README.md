@@ -1,5 +1,5 @@
 # Operation Yeet the Pi
-Pi in the sky, by Miles and David. Also the story of how we ended up on several government watchlists(probably).
+Pi in the sky, by Miles and David. Also the story of how we ended up on several government watchlists.
 
 ## A bad idea... or maybe not
 The plan, if that's what we're going to call it, is to strap a pi onto a homemade rocket engine using [this recipe](https://www.wikihow.com/Make-Rocket-Fuel) for the fuel, and send that up. The final version of the rocket is going to be called the "TBD", which stand for "To Be Destroyed".
