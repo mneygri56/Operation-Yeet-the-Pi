@@ -8,5 +8,5 @@ The plan is to strap a pi onto a homemade rocket engine(https://www.wikihow.com/
 |:----------------------------------:|:-------------------------------------:|
 | Potassium Nitrate(KNO<sub>3</sub>) |      58 grams (2.0 oz) per rocket     |
 |       Granulated White Sugar       |      29 grams (1.0 oz) per rocket     |
-|           Karo Corn Syrup          |  13 milliliters (.43 floz) per rocket |
+|           Karo Corn Syrup          |  13 milliliters (0.43 floz) per rocket |
 |           Distilled Water          | 30 milliliters (1.01 floz) per rocket |
