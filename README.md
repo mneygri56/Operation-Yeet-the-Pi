@@ -17,8 +17,8 @@ The plan, if that's what we're going to call it, is to strap a pi onto a homemad
   + Planning: Start Project Plan
 - Week Two: 11/6 - 11/8
   + Planning: Finish Project Plan, Seek Approval
-    -Make Drawings
-    -Do math that supports the design
+    - Make Drawings
+    - Do math that supports the design
 - Week Three: 11/11 - 11/15
   + Planning: Make Edits To Project Plan, Finalize and Submit
   + Make More Drawings!
