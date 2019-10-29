@@ -4,12 +4,13 @@ Pi in the sky, by Miles and David. Also the story of how we ended up on several 
 ## A bad idea... or maybe not
 The plan, if that's what we're going to call it, is to strap a pi onto a homemade rocket engine using [this recipe](https://www.wikihow.com/Make-Rocket-Fuel) for the fuel, and send that up. The final version of the rocket is going to be called the "TBD", which stand for "To Be Destroyed".
 ## Materials
-|              Material              |                Quantity               |         Cost        |
-|:----------------------------------:|:-------------------------------------:|:-------------------:|
-| Potassium Nitrate(KNO<sub>3</sub>) |      58 grams (2.0 oz) per rocket     |   ~$7.00 per pound  |
-|       Granulated White Sugar       |      29 grams (1.0 oz) per rocket     | ~$2.00 for 4 pounds |
-|           Karo Corn Syrup          |  13 milliliters (.43 floz) per rocket | ~$2.00 for 16 fl oz |
-|           Distilled Water          | 30 milliliters (1.01 floz) per rocket | ~$0.80 for 1 gallon |
+|              Material              |                Quantity               |
+|:----------------------------------:|:-------------------------------------:|
+| Potassium Nitrate(KNO<sub>3</sub>) |      58 grams (2.0 oz) per rocket     |
+|       Granulated White Sugar       |      29 grams (1.0 oz) per rocket     |
+|           Karo Corn Syrup          |  13 milliliters (0.43 floz) per rocket |
+|           Distilled Water          | 30 milliliters (1.01 floz) per rocket |
+
 ## Schedule
 
 - Week One: 10/28 - 10/31
@@ -22,6 +23,24 @@ The plan, if that's what we're going to call it, is to strap a pi onto a homemad
   + Planning: Make Edits To Project Plan, Finalize and Submit
   + Make More Drawings!
 - Week Four: 11/18 - 11/22
-  + Make SolidWorks Models of Chassis
+  + Make SolidWorks Model of Chassis
   + Buy Materials (Potassium Nitrate Specifically)
   + Make Predictions about thrust
+- Week Five: 11/25 - 11/29
+  + Start Code: Make code to start the rocket
+  + Revise SolidWorks Model
+    - Do a Stress Analysis
+    - Make sure there is room for wires
+    - Make sure the Pi fits
+- Week Six: 12/2 - 12/6
+  + Keep Coding:
+    - Make Code to Log Acceleration
+    - Make Code to Log other things
+  + Build the SolidWorks model
+    - In Real Life
+    - Figure Out Materials
+- Week Seven: 12/9 - 12/13
+  + Make 2 Batches and Test:
+    - Boil 'Em Mash 'Em Stick 'Em in a Stew
+    - Don't Actually, its probably toxic
+    - Test For lift, how much juice
