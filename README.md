@@ -30,7 +30,8 @@ The plan, if that's what we're going to call it, is to strap a pi onto a homemad
   + Buy Materials (Potassium Nitrate Specifically)
   + Make Predictions about thrust
 - Week Five: 11/25 - 11/29
-  + Start Code: Make code to start the rocket
+  + Start Code: 
+    - Make code to start the rocket
   + Revise SolidWorks Model
     - Do a Stress Analysis
     - Make sure there is room for wires
@@ -46,5 +47,45 @@ The plan, if that's what we're going to call it, is to strap a pi onto a homemad
   + Make 2 Batches and Test:
     - Boil 'Em Mash 'Em Stick 'Em in a Stew
     - Don't Actually, its probably toxic
-    - Test For lift, how much juice
-- Week Eight: 
+    - Test For lift, how much juice it outputs
+- Weeks Eight to Ten:
+  + Off For Winter Break and Midterms
+- Week Eleven 1/6 - 1/10:
+  + Make More Code:
+    - Sound At Apex
+    - Second Stage Activation and Timing
+  + Build Rocket Engines:
+    - Housing and Connection
+- Week Twelve 1/13 - 1/17:
+  + Build the Rocket:
+    - Put it together
+  + Finish Code:
+    - Have the Code that will run on the Rocket
+- Week Thirteen 1/20 - 1/24:
+  + Assemble First Rocket Completely
+    - Test Launch - 3 Motors, not full 6
+  + Revise Code After Launch
+- Week Fourteen 1/27 - 1/31:
+  + Revise Code More:
+    - See what worked
+  + Revise Design Based on the Launch
+    - Again, see what worked
+- Week Fifteen 2/3 - 2/7:
+  + Launch No. 2 - 4
+    - Full 6 Motors
+    - 3 Launches
+  + Revise Code and Design
+- Week Sixteen 2/10 - 2/14:
+  + Launch No. 3 - 6
+    - Full 6 Motors
+    - 3 More 
+  + Revise Design and Code
+- Week Seventeen 2/17 - 2/21:
+  + Launch No. 7-10
+    - Full 6 Motors
+- Week Eighteen 2/24 - 2/28:
+  + Mess around with rocket fuel
+    - Stick as many motors on as possible
+- Week Nineteen 3/2 - 3/6:
+  + Submit and Finish
+  + We might be able to combine Eighteen and Nineteen
