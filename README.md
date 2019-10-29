@@ -89,3 +89,24 @@ The plan, if that's what we're going to call it, is to strap a pi onto a homemad
 - Week Nineteen 3/2 - 3/6:
   + Submit and Finish
   + We might be able to combine Eighteen and Nineteen
+## Safety
+I know our wikis and stuff are known for a bit of fun and jokes, but this part is serious, professional, and must not be joked around with.
+
+There are multiple danger points in this project. This project can definitely go wrong. We must act with utmost care and respect for all of the forces and materials involved.
+
+### Making the Fuel
+This is probably the most dangerous part. We are going to be heating up flammable materials to get them to congeal into a solid block. [Here](https://www.wikihow.com/Make-Rocket-Fuel?scrlybrkr=71c97d6e) is the procedure for making the fuel and [here](http://www.jamesyawn.net/rcandy/safety.htm) is one of the best places to see the risks and danger points involved. The most dangerous part of making the fuel according to this source is scraping the fuel and shaping it. I agree, we must be careful and wear gloves. Additionally, here more precautions that must be taken:
+
+- Wear Gloves: Potassium Nitrate is a skin irritant and can easily become a problem.
+- Wear Respirators: Potassium Nitrate is also a lung irritant. We must be careful so as not to inhale any dust from it.
+- Have an ABC fire extinguisher on hand in case fire breaks out. Worst case scenario is that fire breaks out in the pan and we are close to it. The first thing that must be done in case of this is to put out the fire. This reaction is self sustaining and powerful, so we cannot rely on just the heat being turned off.
+  - Two people must be on hand while cooking, ideally three. One to cook the mixture, one to get help in case of a fire and the person cooking is incapacitated, and one to put out the fire. All jobs are important, but the two most important are the cooking and putting out the fire, getting help can be taken care of by the person cooking if they are not incapacitated by the fire from the mixture.
+- Do all of it outside, it will minimize damage if fire breaks out, and will provide an easy way for the fumes to escape without harming us.
+- Store the finished rocket fuel in a plastic container in the storage room if possible, this will reduce the risk of people thinking they can mess with the fuel once we are done. 
+### Launches
+This is the other part where things can go wrong. A stray launch can go into someone's face with a lot of force, burn a lot of grass, so on and so forth. Here are some additional concerns to be aware of when launching rockets.
+
+- Make sure the launch area is clear and people are standing well back, this will make sure that things do not catch fire, and that people will not be hurt by the launch.
+- Launch on pavement if possible - if not, put down a piece of metal or other inflammable material under the launch site, this will reduce the risk of fire from grass under the launch site. Additionally, we may consider using one of those launch platforms so that the launch will be straight, in addition to not catching the grass on fire.
+- Keep landing site clear, This is a big one - we don't know where the rocket will land, so if possible, we want to make sure it lands in an unpopulated area, of cars and people, in case a parachute cannot slow it down enough to where it won't break a car's winshield if it lands on it. Additionally, some fuel may be left unreacted, so we don't want it to burn on the ground - Consider putting a gps reciever on it so we can keep track of where it is.
+- Put a parachute in the end so that when it starts its downward approach, it won't be going as fast so it is less dangerous.
