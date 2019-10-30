@@ -6,6 +6,13 @@ Pi in the sky, by Miles and David. Also the story of how we ended up on several 
 That being said, here's how we did it
 ## A bad idea... or maybe not
 The plan, if that's what we're going to call it, is to strap a pi onto a homemade rocket engine using [this recipe](https://www.wikihow.com/Make-Rocket-Fuel) for the fuel, and send that up. The final version of the rocket is going to be called the "TBD", which stand for "To Be Destroyed".
+## The Goal
+Our goal is to launch a rocket as high as we can and collect data along the whole flight. (What Data to Collect). We are going to do a few tests of different additives of the fuel to increase thrust, and we will us this equation:
+
+[The Kerbal Space Program Equation from xkcd](/Pictures/RocketEquation.png)
+
+To calculate how much fuel we should use to maximize delta v. The other values can be calculated from the test we will do and the rocket design.
+
 ## Materials
 |              Material              |                Quantity               |         Cost        |
 |:----------------------------------:|:-------------------------------------:|:-------------------:|
@@ -22,13 +29,15 @@ The plan, if that's what we're going to call it, is to strap a pi onto a homemad
   + Planning: Finish Project Plan, Seek Approval
     - Make Drawings
     - Do math that supports the design
+    - Gather Materials
+    - Make SolidWorks Model of Chassis
 - Week Three: 11/11 - 11/15
   + Planning: Make Edits To Project Plan, Finalize and Submit
   + Make More Drawings!
 - Week Four: 11/18 - 11/22
-  + Make SolidWorks Model of Chassis
   + Buy Materials (Potassium Nitrate Specifically)
-  + Make Predictions about thrust
+  + Test Batches - Different Additives and Force Plate
+    - Use block period/afterschool
 - Week Five: 11/25 - 11/29
   + Start Code: 
     - Make code to start the rocket
@@ -36,6 +45,7 @@ The plan, if that's what we're going to call it, is to strap a pi onto a homemad
     - Do a Stress Analysis
     - Make sure there is room for wires
     - Make sure the Pi fits
+  + Make predictions about how much fuel should be in the rocket
 - Week Six: 12/2 - 12/6
   + Keep Coding:
     - Make Code to Log Acceleration
@@ -110,3 +120,11 @@ This is the other part where things can go wrong. A stray launch can go into som
 - Launch on pavement if possible - if not, put down a piece of metal or other inflammable material under the launch site, this will reduce the risk of fire from grass under the launch site. Additionally, we may consider using one of those launch platforms so that the launch will be straight, in addition to not catching the grass on fire.
 - Keep landing site clear, This is a big one - we don't know where the rocket will land, so if possible, we want to make sure it lands in an unpopulated area, of cars and people, in case a parachute cannot slow it down enough to where it won't break a car's winshield if it lands on it. Additionally, some fuel may be left unreacted, so we don't want it to burn on the ground - Consider putting a gps reciever on it so we can keep track of where it is.
 - Put a parachute in the end so that when it starts its downward approach, it won't be going as fast so it is less dangerous.
+
+## Questions to consider
+(Put Answers below as we discuss)
+- What should we put on the rocket? What do we need?
+- What additives should we test?
+- What should we make the chassis out of? The engine housing? Pi camera housing? Others?
+- Parachute? If so, how will it deploy? If not, how do we reduce the risk of crashing and burning? Use McIntire Park? Milton Airfield? What permits, if any, will we need to do it at these places?
+- How are we going to reduce weight so it gets as high as possible?
