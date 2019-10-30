@@ -1,7 +1,9 @@
 # Operation Yeet the Pi
 Pi in the sky, by Miles and David. Also the story of how we ended up on several government watchlists.
 
-*******DISCLAIMER, WE ARE DOING THIS UNDER A LOT OF SUPERVISON AND HAVE A LOT OF PEOPLE WHO KNOW WHAT THEY ARE DOING, THIS IS BY NO MEANS AN ENDORSEMENT OF ANY PROJECTS YOU MAY DO, AND THE FACT THAT WE ARE STILL ALIVE DOES NOT MEAN YOU WILL BE, PLEASE, <b>DO NOT TRY THIS AT HOME</b> *********
+*******DISCLAIMER, WE ARE DOING THIS UNDER A LOT OF SUPERVISON AND HAVE A LOT OF PEOPLE WHO KNOW WHAT THEY ARE DOING, THIS IS BY NO MEANS AN ENDORSEMENT OF ANY PROJECTS YOU MAY DO, AND THE FACT THAT WE ARE STILL ALIVE DOES NOT MEAN YOU WILL BE, PLEASE, <b>DO NOT TRY THIS AT HOME</b> ********* 
+
+Thats a little aggressive, but it gets the point across, just to reiterate do not try this at home
 
 That being said, here's how we did it
 ## A bad idea... or maybe not
