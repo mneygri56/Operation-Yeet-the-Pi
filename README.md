@@ -9,7 +9,7 @@ The plan, if that's what we're going to call it, is to strap a pi onto a homemad
 ## The Goal
 Our goal is to launch a rocket as high as we can and collect data along the whole flight. (What Data to Collect). We are going to do a few tests of different additives of the fuel to increase thrust, and we will us this equation:
 
-![The Kerbal Space Program Equation from xkcd](https://www.github.com/mneygri56/Operation-Yeet-the-Pi/master/Pictures/RocketEquation.png)
+![The Kerbal Space Program Equation from xkcd](https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/RocketEquation.PNG)
 
 To calculate how much fuel we should use to maximize delta v. The other values can be calculated from the test we will do and the rocket design.
 
