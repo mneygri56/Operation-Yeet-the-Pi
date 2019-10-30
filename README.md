@@ -23,6 +23,7 @@ To calculate how much fuel we should use to maximize delta v. The other values c
 |           Karo Corn Syrup          |  13 milliliters (.43 floz) per rocket | ~$2.00 for 16 fl oz |
 |           Distilled Water          | 30 milliliters (1.01 floz) per rocket | ~$0.80 for 1 gallon |
 
+Cost = $25.80 Total, not including materials
 ## Schedule
 
 - Week One: 10/28 - 10/31
