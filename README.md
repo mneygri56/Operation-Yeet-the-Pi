@@ -127,11 +127,21 @@ This is the other part where things can go wrong. A stray launch can go into som
 ## Questions to consider
 (Put Answers below as we discuss)
 - What should we put on the rocket? What do we need?
+   - accelerometer
+   - Piezo Buzzer
+   - Pi
+   - Wires
+   - battery
+   - GPS unit
 - What additives should we test?
+  -
 - What should we make the chassis out of? The engine housing? Pi camera housing? Others?
 - Parachute? If so, how will it deploy? If not, how do we reduce the risk of crashing and burning? Use McIntire Park? Milton Airfield? What permits, if any, will we need to do it at these places?
+  - 
 - How are we going to reduce weight so it gets as high as possible?
-
+  - Skeletonized Parts
+  - Bare Minimum Wires
+  - 
 
 ## Sources
 I have a feeling I will be referencing this a lot:
