@@ -131,3 +131,9 @@ This is the other part where things can go wrong. A stray launch can go into som
 - What should we make the chassis out of? The engine housing? Pi camera housing? Others?
 - Parachute? If so, how will it deploy? If not, how do we reduce the risk of crashing and burning? Use McIntire Park? Milton Airfield? What permits, if any, will we need to do it at these places?
 - How are we going to reduce weight so it gets as high as possible?
+
+
+## Sources
+I have a feeling I will be referencing this a lot:
+
+Munroe, Randall. “Rocket Golf.” Rocket Golf, Xkcd, [Rocket Golf](what-if.xkcd.com/85/).
