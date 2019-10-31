@@ -13,7 +13,7 @@ Our goal is to launch a rocket as high as we can and collect data along the whol
 
 ![The Kerbal Space Program Equation from xkcd](https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/RocketEquation.PNG)
 
-To calculate how much fuel we should use to maximize delta v. The other values can be calculated from the test we will do and the rocket design.
+To calculate how much fuel we should use to maximize delta v. The other values can be calculated from the test we will do and the rocket design. We could also have a height goal so that we can figure out exactly how fast we want the exhaust to go and how much fuel we need.
 
 ## Materials
 |              Material              |                Quantity               |         Cost        |
