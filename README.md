@@ -137,11 +137,14 @@ This is the other part where things can go wrong. A stray launch can go into som
   -
 - What should we make the chassis out of? The engine housing? Pi camera housing? Others?
 - Parachute? If so, how will it deploy? If not, how do we reduce the risk of crashing and burning? Use McIntire Park? Milton Airfield? What permits, if any, will we need to do it at these places?
-  - 
+  - Lithobraking
+  - propellor? (probably not)
+  - "Nerf Sword" prinicple
+    - Plastic Shell covered in foam
 - How are we going to reduce weight so it gets as high as possible?
   - Skeletonized Parts
   - Bare Minimum Wires
-  - 
+  - Plastic
 
 ## Sources
 I have a feeling I will be referencing this a lot:
