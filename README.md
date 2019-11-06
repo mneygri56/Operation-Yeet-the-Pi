@@ -11,8 +11,6 @@ The plan, if that's what we're going to call it, is to strap a pi onto a homemad
 ## The Goal
 Our goal is to launch a rocket as high as we can and collect data along the whole flight. (What Data to Collect). We are going to do a few tests of different additives of the fuel to increase thrust, and we will use this equation:
 
-![The Kerbal Space Program Equation from xkcd](https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/RocketEquation.PNG)
-
 <a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" title="\LARGE \Delta v = v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" /></a>
 
 To calculate how much fuel we should use to maximize delta v. The other values can be calculated from the test we will do and the rocket design. We could also have a height goal so that we can figure out exactly how fast we want the exhaust to go and how much fuel we need.
@@ -154,3 +152,16 @@ I have a feeling I will be referencing this a lot:
 Munroe, Randall. “Rocket Golf.” Rocket Golf, Xkcd, [Rocket Golf](what-if.xkcd.com/85/).
 
 Johnson, Lee. “How to Calculate the Force of a Falling Object.” Sciencing, 2 Mar. 2019, [sciencing.com/calculate-force-falling-object-6454559.html](https://sciencing.com/calculate-force-falling-object-6454559.html).
+
+## Calculations
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" title="\LARGE \Delta v = v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;v_{exhaust}=I_{sp}g_{0}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;v_{exhaust}=I_{sp}g_{0}" title="\LARGE v_{exhaust}=I_{sp}g_{0}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;g_0&space;=&space;9.806\frac{m}{s^2}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;g_0&space;=&space;9.806\frac{m}{s^2}" title="\LARGE g_0 = 9.806\frac{m}{s^2}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;I_{sp}=120s" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;I_{sp}=120s" title="\LARGE I_{sp}=120s" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" title="\LARGE v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" /></a>
+
