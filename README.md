@@ -150,3 +150,5 @@ This is the other part where things can go wrong. A stray launch can go into som
 I have a feeling I will be referencing this a lot:
 
 Munroe, Randall. “Rocket Golf.” Rocket Golf, Xkcd, [Rocket Golf](what-if.xkcd.com/85/).
+
+Johnson, Lee. “How to Calculate the Force of a Falling Object.” Sciencing, 2 Mar. 2019, (sciencing.com/calculate-force-falling-object-6454559.html).
