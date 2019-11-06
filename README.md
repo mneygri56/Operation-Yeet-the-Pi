@@ -13,6 +13,8 @@ Our goal is to launch a rocket as high as we can and collect data along the whol
 
 ![The Kerbal Space Program Equation from xkcd](https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/RocketEquation.PNG)
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" title="\LARGE \Delta v = v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" /></a>
+
 To calculate how much fuel we should use to maximize delta v. The other values can be calculated from the test we will do and the rocket design. We could also have a height goal so that we can figure out exactly how fast we want the exhaust to go and how much fuel we need.
 
 ## Materials
