@@ -158,15 +158,15 @@ Johnson, Lee. “How to Calculate the Force of a Falling Object.” Sciencing, 2
 
 ## Calculations
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" title="\LARGE \Delta v = v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" target="_blank"><img src="https://latex.codecogs.com/png.latex?&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" title="\Delta v = v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;v_{exhaust}=I_{sp}g_{0}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;v_{exhaust}=I_{sp}g_{0}" title="\LARGE v_{exhaust}=I_{sp}g_{0}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=&space;v_{exhaust}=I_{sp}g_{0}" target="_blank"><img src="https://latex.codecogs.com/png.latex?&space;v_{exhaust}=I_{sp}g_{0}" title=" v_{exhaust}=I_{sp}g_{0}" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;g_0&space;=&space;9.806\frac{m}{s^2}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;g_0&space;=&space;9.806\frac{m}{s^2}" title="\LARGE g_0 = 9.806\frac{m}{s^2}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=&space;g_0&space;=&space;9.806\frac{m}{s^2}" target="_blank"><img src="https://latex.codecogs.com/png.latex?&space;g_0&space;=&space;9.806\frac{m}{s^2}" title=" g_0 = 9.806\frac{m}{s^2}" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;I_{sp}=120s" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;I_{sp}=120s" title="\LARGE I_{sp}=120s" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=&space;I_{sp}=120s" target="_blank"><img src="https://latex.codecogs.com/png.latex?&space;I_{sp}=120s" title="I_{sp}=120s" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" title="\LARGE v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" title="v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;v=1176.72ln(\frac{m_{fuel}&plus;444}{444})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;v=1176.72ln(\frac{m_{fuel}&plus;444}{444})" title="\Delta v=1176.72ln(\frac{m_{fuel}+444}{444})" /></a>
 
