@@ -171,3 +171,38 @@ Johnson, Lee. “How to Calculate the Force of a Falling Object.” Sciencing, 2
 <a href="https://www.codecogs.com/eqnedit.php?latex=m_{fin}=444g" target="_blank"><img src="https://latex.codecogs.com/gif.latex?m_{fin}=444g" title="m_{fin}=444g" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;v=1176.72ln(\frac{m_{fuel}&plus;444}{444})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;v=1176.72ln(\frac{m_{fuel}&plus;444}{444})" title="\Delta v=1176.72ln(\frac{m_{fuel}+444}{444})" /></a>
+
+## Some Documentation
+### Pictures
+Should have started this sooner, but here:
+
+
+### Weekly Progress Report
+This starts from the first milestone, 11/22
+
+#### 11/22
+
+
+#### 11/29
+
+#### 12/6
+
+#### 12/13
+
+#### 1/10
+
+#### 1/17
+
+#### 1/24
+
+#### 1/31
+
+#### 2/7
+
+#### 2/14
+
+#### 2/21
+
+#### 2/28
+
+#### 3/6
