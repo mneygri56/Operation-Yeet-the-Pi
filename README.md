@@ -168,3 +168,5 @@ Johnson, Lee. “How to Calculate the Force of a Falling Object.” Sciencing, 2
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\LARGE&space;v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" title="\LARGE v_{exhaust}=120s*9.806\frac{m}{s^2}=1176.72\frac{m}{s}" /></a>
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\Delta&space;v=1176.72ln(\frac{m_{fuel}&plus;444}{444})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta&space;v=1176.72ln(\frac{m_{fuel}&plus;444}{444})" title="\Delta v=1176.72ln(\frac{m_{fuel}+444}{444})" /></a>
+
