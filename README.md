@@ -24,6 +24,8 @@ To calculate how much fuel we should use to maximize delta v. The other values c
 |           Distilled Water          | 30 milliliters (1.01 floz) per rocket | ~$0.80 for 1 gallon |
 
 Cost = $25.80 Total, not including materials
+
+Cost Turned out to be about $23
 ## Schedule
 
 - Week One: 10/28 - 10/31
