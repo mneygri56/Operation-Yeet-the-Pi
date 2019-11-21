@@ -158,6 +158,8 @@ Munroe, Randall. “Rocket Golf.” Rocket Golf, Xkcd, [Rocket Golf](what-if.xkc
 
 Johnson, Lee. “How to Calculate the Force of a Falling Object.” Sciencing, 2 Mar. 2019, [sciencing.com/calculate-force-falling-object-6454559.html](https://sciencing.com/calculate-force-falling-object-6454559.html).
 
+Nakka, Richard. “Determining Total Impulse and Specific Impulse from Static Test Data.” Richard Nakka's Experimental Rocketry Site, 2000, [www.nakka-rocketry.net/impcalc.html](www.nakka-rocketry.net/impcalc.html).
+
 ## Calculations
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\LARGE&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" target="_blank"><img src="https://latex.codecogs.com/png.latex?&space;\Delta&space;v&space;=&space;v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" title="\Delta v = v_{exhaust}*ln(\frac{m_{initial}}{m_{final}})" /></a>
