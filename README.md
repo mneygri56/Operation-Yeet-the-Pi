@@ -125,7 +125,7 @@ This is the other part where things can go wrong. A stray launch can go into som
 - Launch on pavement if possible - if not, put down a piece of metal or other inflammable material under the launch site, this will reduce the risk of fire from grass under the launch site. Additionally, we may consider using one of those launch platforms so that the launch will be straight, in addition to not catching the grass on fire.
 - Keep landing site clear, This is a big one - we don't know where the rocket will land, so if possible, we want to make sure it lands in an unpopulated area, of cars and people, in case a parachute cannot slow it down enough to where it won't break a car's winshield if it lands on it. Additionally, some fuel may be left unreacted, so we don't want it to burn on the ground - Consider putting a gps reciever on it so we can keep track of where it is.
 - Put a parachute in the end so that when it starts its downward approach, it won't be going as fast so it is less dangerous.
-
+- Apparently there are rules against putting massive amounts of rocket fuel on plastic and shooting it as high as it will go, so we are only going to use two engines to avoid being sued by the FAA
 ## Questions to consider
 (Put Answers below as we discuss)
 - What should we put on the rocket? What do we need?
