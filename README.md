@@ -185,10 +185,14 @@ Should have started this sooner, but here:
 This starts from the first milestone, 11/22
 
 #### 11/22
-
-
+Well, we made a batch, but it didn't really work. I couldn't really tell you why, but we have a few guesses
+- The stuff wasn't dry -very likely
+- It doesn't work and we are failures -less likely
+It made a really cool firey thing though
 #### 11/29
+We forgot about thankisgiving break, and we didn't accomplish everything we set out to do. We are thinking we can't start our rocket with the pi, so maybe just use a blowtorch, we'll see if the starters can actually start the rocket fuel, but we might need to use the blowtorch. 
 
+In other news, we got a pretty good model of the rocket in solidworks, all we have to do now is add a servo so that we can take the top off whenever we want to.
 #### 12/6
 
 #### 12/13
