@@ -188,6 +188,7 @@ This starts from the first milestone, 11/22
 Well, we made a batch, but it didn't really work. I couldn't really tell you why, but we have a few guesses
 - The stuff wasn't dry -very likely
 - It doesn't work and we are failures -less likely
+
 It made a really cool firey thing though
 #### 11/29
 We forgot about thankisgiving break, and we didn't accomplish everything we set out to do. We are thinking we can't start our rocket with the pi, so maybe just use a blowtorch, we'll see if the starters can actually start the rocket fuel, but we might need to use the blowtorch. 
