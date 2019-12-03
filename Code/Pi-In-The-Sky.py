@@ -19,7 +19,7 @@ GPIO.setup(servoPIN, GPIO.OUT)
 p = GPIO.PWM(servoPIN, 50) # GPIO 17 for PWM with 50Hz
 p.start(2.5)#Initialize to 90
 
-accelVals = [[0,0,0]]
+accelVals = [(0,0,0)]
 #make a map function for the servo and acsellerometer values
 def realMap(number, lowFirst, highFirst,lowSecond, highSecond):
     newNumber =(number-lowFirst)/(highFirst-lowFirst)*(highSecond-lowSecond)+lowSecond
@@ -39,7 +39,7 @@ while True:
     	servoPos = 180
     else:
     	servoPos = 90
-    dutyCycle = map(servoPos, 0, 180, 1, 2)#If duty cycle is 1 angle is  0, 2 angle is 180
+    dutyCycle = realMap(servoPos, 0, 180, 1, 2)#If duty cycle is 1 angle is  0, 2 angle is 180
     p.ChangeDutyCycle(servoPos)
 
 
