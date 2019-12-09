@@ -195,7 +195,7 @@ We forgot about thankisgiving break, and we didn't accomplish everything we set 
 
 In other news, we got a pretty good model of the rocket in solidworks, all we have to do now is add a servo so that we can take the top off whenever we want to.
 #### 12/6
-
+We have most of a solidworks model, its not completely done, but we are close, just having to resolve all these random errors that are weird. We also added a few videos and pictures of a cool launch that finally worked where Dr. Shields almost shot himself in the leg! to the github Cool! Additionally, there is now a bunch of code for logging acceleration data and taking video. We have yet to print the model, but we are still on schedule.
 #### 12/13
 
 #### 1/10
