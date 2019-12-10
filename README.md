@@ -180,9 +180,11 @@ Nakka, Richard. “Determining Total Impulse and Specific Impulse from Static Te
 ### Pictures
 Should have started this sooner, but here:
 
-<img src="https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/IMG_0521.JPG" alt="alt text" width="400" height="200">
+<img src="https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/IMG_0521.JPG" alt="alt text" width="400" height="300">
 
-<img src="https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/Rocket%20Launch.PNG" alt="alt text" width="400" height="200">
+<img src="https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/Rocket%20Launch.PNG" alt="alt text" width="400" height="300">
+
+<img src="https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/RocketOtherLaunch.PNG" alt="alt text" width="200" height="400">
 
 ### Weekly Progress Report
 This starts from the first milestone, 11/22
