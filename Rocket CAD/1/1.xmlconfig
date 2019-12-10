@@ -18,15 +18,15 @@
 <IsRealGasInProject value="0"/>
 <IsRefDensityUsedForCalcWithGravity value="1"/>
 <IsSteamInProject value="0"/>
-<JobOwnerName value="CCS\dwiles22"/>
+<JobOwnerName value="CCS\mneygri56"/>
 <JobProjectName value=""/>
 <JouleHeating value="0"/>
 <ManualSolverRefinement value="0"/>
-<MinimalGapSize value="0.15044551847603149"/>
-<MinimalWallThickness value="0.15044551847603149"/>
+<MinimalGapSize value="0.17242562802756944"/>
+<MinimalWallThickness value="0.17242562802756944"/>
 <PerformanceMonitoring value="0"/>
 <PostConfigName value="Default"/>
-<PostModelName value="H:\Rocket\RocketAssembly.SLDASM"/>
+<PostModelName value="C:\Users\mneygri56\Documents\GitHub\Operation-Yeet-the-Pi\Rocket CAD\RocketAssembly.SLDASM"/>
 <ProblemType value="0"/>
 <ProductName value="0"/>
 <ProjectName value="Project(1)"/>
@@ -65,7 +65,7 @@
 <ExternalWallConditions value="0"/>
 <FeatureType value="21"/>
 <FlowType value="1"/>
-<FrameOfRefUUID value=""/>
+<FrameOfRefUUID value="2deab982-3027-4f84-b03b-54232c70a35b"/>
 <GUID value="985921A2-7601-4F67-B237-4210F9ECC52F"/>
 <HeatTransfer value="0"/>
 <HumidityEnabled value="0"/>
@@ -596,7 +596,7 @@
 <ExcelParameterLinkedSubId value=""/>
 <ExcelParameterPeriodic value="0"/>
 <ExcelParameterType value="101"/>
-<ExcelParameterValue value="3"/>
+<ExcelParameterValue value="1500"/>
 <UseDampedGoalsValues value="0"/>
 <ExcelParameterDefinitionValues size="0"> </ExcelParameterDefinitionValues>
 <ExcelParameterInputData size="0"> </ExcelParameterInputData>
@@ -1565,9 +1565,9 @@
 <MaxThinChannelRefinementLevel value="1"/>
 <MaximumChannelsThickness value="0"/>
 <MinimumChannelsThickness value="0"/>
-<Nx value="32"/>
-<Ny value="47"/>
-<Nz value="32"/>
+<Nx value="30"/>
+<Ny value="41"/>
+<Nz value="30"/>
 <PartialCellsRefinementLevel value="0"/>
 <RefineAllCells value="0"/>
 <RefineAllFluidCells value="0"/>
@@ -1576,25 +1576,25 @@
 <RefinementLevel value="0"/>
 <SolidCellsRefinementLevel value="0"/>
 <ToleranceCriteriaRefinementLevel value="0"/>
-<ToleranceCriteriaValue value="0.037611379619007873"/>
+<ToleranceCriteriaValue value="0.043106407006892361"/>
 <DistanceRefinementLevels size="2"> 0 0 </DistanceRefinementLevels>
 <ControlPoints index="0">
 <Manual size="5"> 0 0 0 0 0 </Manual>
-<NumOfCells size="5"> 10 2 2 14 1 </NumOfCells>
-<Points size="5"> -0.5755327349577577 -0.12257098638708837 -0.042936522400922536 0.036697941585243289 0.4896596901559126 </Points>
-<Ratio size="5"> 1.8049999999999999 1 1 0.55411868124201447 1 </Ratio>
+<NumOfCells size="5"> 9 2 2 13 1 </NumOfCells>
+<Points size="5"> -0.5755327349577577 -0.13567294694082718 -0.044661719395121924 0.046349508150583349 0.4896596901559126 </Points>
+<Ratio size="5"> 1.675 1 1 0.59505960073928477 1 </Ratio>
 </ControlPoints>
 <ControlPoints index="1">
 <Manual size="5"> 0 0 0 0 0 </Manual>
-<NumOfCells size="5"> 10 5 14 14 1 </NumOfCells>
-<Points size="5"> -0.75580869138309414 -0.33456123965020595 -0.14953521858864915 0.30629273572976434 0.75762929115785882 </Points>
-<Ratio size="5"> 1.6499999999999999 1 1 0.58816488518221732 1 </Ratio>
+<NumOfCells size="5"> 8 4 13 11 1 </NumOfCells>
+<Points size="5"> -0.75580869138309414 -0.33895726156051309 -0.15223606797749958 0.34485125605513894 0.75762929115785882 </Points>
+<Ratio size="5"> 1.5569999999999999 1 1 0.64469807759841424 1 </Ratio>
 </ControlPoints>
 <ControlPoints index="2">
 <Manual size="5"> 0 0 0 0 0 </Manual>
-<NumOfCells size="5"> 10 2 2 15 1 </NumOfCells>
-<Points size="5"> -0.30563828096971957 0.14720272964313522 0.22092103369639066 0.29463933774964607 0.74748034836250088 </Points>
-<Ratio size="5"> 1.8149999999999999 1 1 0.55087127599775132 1 </Ratio>
+<NumOfCells size="5"> 10 2 2 13 1 </NumOfCells>
+<Points size="5"> -0.30563828096971957 0.1372732572015882 0.22176181493509722 0.30625037266860627 0.74748034836250088 </Points>
+<Ratio size="5"> 1.6890000000000001 1 1 0.5931202646768442 1 </Ratio>
 </ControlPoints>
 </BaseMeshSettings>
 <ConvergenceOptions index="0">
@@ -2471,7 +2471,7 @@
 <Geometry index="0">
 <GeomType value="0"/>
 <GeomUUID value="00000000-0000-0000-0000-000000000000"/>
-<BodiesIDs size="3"> 040ef141-d81d-4aff-87e1-d3a057cf0eb7 6749d8b7-f8ff-4b96-83d3-c508343dbd02 06090ce3-f252-4f29-a3f5-52b4edd6eefb </BodiesIDs>
+<BodiesIDs size="2"> 577a0d6d-5eea-46d8-b1e6-9052df82a20b f19223a9-5ac3-461e-aa05-c0da831fed03 </BodiesIDs>
 </Geometry>
 <ReferenceParameters index="0">
 <ConstTemperature value="293.19999999999999"/>
@@ -2591,8 +2591,7 @@
 <WarningCommentFormat25 value="Please check that the fluid/fluid interface of the region %s and %s is axisymmetric."/>
 <WarningCommentFormat26 value="Condition name : %s"/>
 <WarningCommentFormat27 value="Condition name : %s"/>
-<WarningCommentFormat28 value="Cannot save the file. Disk full or you do not have permission to write.
-File name: %s"/>
+<WarningCommentFormat28 value=""/>
 <WarningCommentFormat29 value="Specifying of global goal average density is recommended."/>
 <WarningCommentFormat3 value="dV/V=%g"/>
 <WarningCommentFormat30 value="Specified %s; Automatically defined %s"/>

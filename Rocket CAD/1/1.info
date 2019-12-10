@@ -2,8 +2,8 @@
     System Info
                 Status:   Solver is finished.
                 Product:   Flow Simulation 2019 SP3.0. Build: 4547
-                Computer name:   CHSSIGMA-26858
-                User name:   dwiles22
+                Computer name:   CHSSIGMA-26859
+                User name:   mneygri56
                 Processors:   Intel(R) Core(TM) i5-4570S CPU @ 2.90GHz
                 Memory:   7986 MB / 134217727 MB
                 Operating system:   Windows 10 (or higher) (Version 10.0.18362)
@@ -13,7 +13,7 @@
     General Info
                 Model:   RocketAssembly.SLDASM
                 Project name:   Project(1)
-                Project path:   H:\Rocket\1
+                Project path:   C:\Users\mneygri56\Documents\GitHub\Operation-Yeet-the-Pi\Rocket CAD\1
                 Units system:   Custom Units
                 Analysis type:   External (not exclude internal spaces)
                 Exclude cavities without flow conditions :   Off
@@ -23,17 +23,12 @@
     Physical Features
                 Heat conduction in solids:   Off
                 Time dependent:   Off
-                Gravitational effects:   On
+                Gravitational effects:   Off
                 Flow type:   Laminar and turbulent
                 High Mach number flow:   Off
                 Humidity:   Off
                 Free surface:   Off
                 Default roughness:   0 micrometer
-
-        Gravitational Settings
-                X component:   0 m/s^2
-                Y component:   15.00 m/s^2
-                Z component:   0 m/s^2
                 Default wall conditions:   Adiabatic wall
 
     Computational Domain
@@ -52,32 +47,56 @@
     Calculation Mesh
 
         Basic Mesh Dimensions
-                Number of cells in X:   32
-                Number of cells in Y:   47
-                Number of cells in Z:   32
+                Number of cells in X:   30
+                Number of cells in Y:   41
+                Number of cells in Z:   30
 
         Number Of Cells
-                Cells:   50320
-                Fluid cells:   50320
+                Cells:   38512
+                Fluid cells:   38512
                 Irregular cells:   0
                 Trimmed cells:   0
                 Maximum refinement level:   1
 
     Goals
+
+        Global Goals
+
+            GG Force (Y) 1
+                Type:   Global Goal
+                Goal type:   Force (Y)
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+        Equation Goals
+
+            Equation Goal 1
+                Type:   Equation Goal
+                Formula:   GG Force (Y) 1*2/(1.204*3^2*3.14159*.025^2)
+                Dimensionality:   Force
+                Use in convergence :   On
+
+    Goals
                 
-                Name   	Unit   	Value   	Progress   	Criteria   	Delta   	Use in convergence 
+                Name              	Unit   	Value   	Progress   	Criteria      	Delta           	Use in convergence 
+                GG Force (Y) 1    	N      	0.057   	100        	0.012150382   	0.00257733594   	On                 
+                Equation Goal 1   	N      	5.384   	100        	1.14214543    	0.2422716       	On                 
 
     General Info
-                Run at:   CHSSIGMA-26858
+                Run at:   CHSSIGMA-26859
                 Number of cores:   4
-                Iterations:   111
-                CPU time:   121 s
+                Iterations:   68
+                CPU time:   72 s
 
         Log
-                Mesh generation started	0:   11:10:18 , Nov 26
-                Mesh generation normally finished	0:   11:10:25 , Nov 26
-                Preparing data for calculation	0:   11:10:25 , Nov 26
-                Calculation started	0:   11:10:30 , Nov 26
-                Calculation has converged since the following criteria are satisfied:	111:   11:12:26 , Nov 26
-                    Goals are converged	111:   
-                Calculation finished	111:   11:12:37 , Nov 26
+                Mesh generation started	0:   11:30:31 , Dec 09
+                Mesh generation normally finished	0:   11:30:33 , Dec 09
+                Preparing data for calculation	0:   11:30:34 , Dec 09
+                Calculation started	0:   11:30:35 , Dec 09
+                Calculation has converged since the following criteria are satisfied:	68:   11:31:46 , Dec 09
+                    Goals are converged	68:   
+                Calculation finished	68:   11:31:47 , Dec 09
+                Preparing data for calculation	0:   11:35:55 , Dec 09
+                Calculation finished	68:   11:35:56 , Dec 09
+                Preparing data for calculation	0:   11:36:54 , Dec 09
+                Calculation finished	68:   11:36:54 , Dec 09
