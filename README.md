@@ -179,7 +179,7 @@ Nakka, Richard. “Determining Total Impulse and Specific Impulse from Static Te
 ## Some Documentation
 ### Pictures
 Should have started this sooner, but here:
-
+<img src="https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/IMG_0521.JPG" alt="alt text" width="200" height="200">
 
 ### Weekly Progress Report
 This starts from the first milestone, 11/22
