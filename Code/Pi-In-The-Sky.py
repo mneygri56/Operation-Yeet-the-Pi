@@ -20,13 +20,11 @@ GPIO.setup(servoPIN, GPIO.OUT)
 p = GPIO.PWM(servoPIN, 50) # GPIO 17 for PWM with 50Hz
 p.start(2.5)#Initialize to 90
 
+parachuteServoPin = 18
+GPIO.setup(parachuteServoPin, GPIO.OUT)
+p2 = GPIO.PWM(parachuteServoPin, 50) # GPIO 17 for PWM with 50Hz
+p2.start(2.5)#Initialize to 90
 
-starterPin = 18
-starterPin2 = 21
-GPIO.setup(starterPin, GPIO.OUT)
-GPIO.setup(starterPin2, GPIO.OUT)
-GPIO.output(starterPin, 1)
-GPIO.output(starterPin2, 1)
 
 accelValsBeforeMotor = [[0,0,0,0]]
 
@@ -38,29 +36,9 @@ def realMap(number, lowFirst, highFirst,lowSecond, highSecond):
 
 def beep():
 	#beep on the buzzer
-def launch():
-	GPIO.output(starterPin, 0)
-	GPIO.output(starterPin2, 0)
-	time.sleep(1)
-	GPIO.output(starterPin, 1)
-	GPIO.output(starterPin2, 1)
 
-def countDown():
-	sleep(10)
-	beep()
-	sleep(5)
-	beep()
-	sleep(5)
-	beep()
-	for x in range(5)
-		sleep(1)
-		beep()
-	for x in range(50):
-		sleep(.1)
-		beep()
-	launch()
-	myCamera.start_recording('thrustCam.h264')
-countDown()
+myCamera.start_recording('thrustCam.h264')
+
 while True:
 	#get the current time
 	currTime = time.time()-start_time
@@ -87,11 +65,16 @@ while True:
     #set the servo position and map it to the duty cycle so it can be used
     if(currTime>20):
     	servoPos = 180
+
+    	parachuteServoPos = 180
     else:
     	servoPos = 90
-    dutyCycle = realMap(servoPos, 0, 180, 1, 2)#If duty cycle is 1 angle is  0, 2 angle is 180
-    p.ChangeDutyCycle(servoPos)
 
+    	parachuteServoPos = 0
+    dutyCycle = realMap(servoPos, 0, 180, 1, 2)#If duty cycle is 1 angle is  0, 2 angle is 180
+    p.ChangeDutyCycle(dutyCycle)
+    parachuteCycle = realMap(parachuteServoPos, 0, 180, 1, 2)
+    p2.ChangeDutyCycle(parachuteCycle)
 
     #Record video for three minutes
     if(time.time()-start_time>180):
