@@ -11,7 +11,7 @@ lsm303 = Adafruit_LSM303.LSM303()
 #Initialize the camera
 myCamera = PiCamera()
 start_time = time.time()
-myCamera.start_recording('thrustCam.h264')
+
 
 #Initialize the servo
 servoPIN = 17
@@ -19,9 +19,18 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(servoPIN, GPIO.OUT)
 p = GPIO.PWM(servoPIN, 50) # GPIO 17 for PWM with 50Hz
 p.start(2.5)#Initialize to 90
-motorOn = True
-totalAccel = 0
+
+
+starterPin = 18
+starterPin2 = 21
+GPIO.setup(starterPin, GPIO.OUT)
+GPIO.setup(starterPin2, GPIO.OUT)
+GPIO.output(starterPin, 1)
+GPIO.output(starterPin2, 1)
+
 accelValsBeforeMotor = [[0,0,0,0]]
+
+beeped = False
 #make a map function for the servo and acsellerometer values
 def realMap(number, lowFirst, highFirst,lowSecond, highSecond):
     newNumber =(number-lowFirst)/(highFirst-lowFirst)*(highSecond-lowSecond)+lowSecond
@@ -29,51 +38,54 @@ def realMap(number, lowFirst, highFirst,lowSecond, highSecond):
 
 def beep():
 	#beep on the buzzer
+def launch():
+	GPIO.output(starterPin, 0)
+	GPIO.output(starterPin2, 0)
+	time.sleep(1)
+	GPIO.output(starterPin, 1)
+	GPIO.output(starterPin2, 1)
 
-while !motorOn:
-	accel, mag = lsm303.read()
-    accel_x, accel_y, accel_z = accel
-    x = realMap(accel_x, -1000, 1000, -9.81, 9.81)
-    y = realMap(accel_y, -1000, 1000, -9.81, 9.81)
-    z = realMap(accel_z, -1000, 1000, -9.81, 9.81)
-    currentAccel = math.sqrt(x**2+y**2+z**2)
-    if(currentAccel>15):
-    	motorOn = True
+def countDown():
+	sleep(10)
+	beep()
+	sleep(5)
+	beep()
+	sleep(5)
+	beep()
+	for x in range(5)
+		sleep(1)
+		beep()
+	for x in range(50):
+		sleep(.1)
+		beep()
+	launch()
+	myCamera.start_recording('thrustCam.h264')
+countDown()
 while True:
-	#get the accelllerometor values and map them to m/s^2
+	#get the current time
 	currTime = time.time()-start_time
+
+	#get the accelllerometor values and map them to m/s^2
 	accel, mag = lsm303.read()
     accel_x, accel_y, accel_z = accel
     x = realMap(accel_x, -1000, 1000, -9.81, 9.81)
     y = realMap(accel_y, -1000, 1000, -9.81, 9.81)
     z = realMap(accel_z, -1000, 1000, -9.81, 9.81)
-    deltat = currTime-accelVals[len(accelVals)-1][3]
 
-    #if motor is on, append the values to the array describing the accelleratiion before
-    #The Motor cuts out, otherwise add it to the one describing after the motor cuts out
-    if(motorOn):
-    	accelValsBeforeMotor.append([x,y,z,deltat])
-   	else:
-   		accelValsAfterMotor.append([x,y,z,deltat])
-    currentAccel = math.sqrt(x**2+y**2+z**2)
-    if(currentAccel<10):
-    	motorOn = False
+    #Append these values so we can get the accelleration data
+    accelValsBeforeMotor.append([x,y,z])
+   	
 
     #Integrate Accelleratian over the flight time to get current velocity
-    for a in range(len(accelValsBeforeMotor)):
-    	xVel += math.sqrt(a[0]**2+a[1]**2+a[2]**2)*a[3]
-    for b in range(len(accelValsAfterMotor)):
-    	xVel += b[0]*b[3]
-    	yVel += b[1]*b[3]
-    	zVel +=
-    currentVelocity = totalAccel
+    
 
     #If the velocity is low, beep
-    if currentVelocity<1:
+    if currTime>20 and not beeped:
     	beep()
+    	beeped = True
 
     #set the servo position and map it to the duty cycle so it can be used
-    if(currTime>90):
+    if(currTime>20):
     	servoPos = 180
     else:
     	servoPos = 90
