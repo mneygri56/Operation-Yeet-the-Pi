@@ -25,6 +25,8 @@ GPIO.setup(parachuteServoPin, GPIO.OUT)
 p2 = GPIO.PWM(parachuteServoPin, 50) # GPIO 17 for PWM with 50Hz
 p2.start(2.5)#Initialize to 90
 
+buzzerPin = 14
+GPIO.setup(buzzerPin, GPIO.OUT)
 
 accelValsBeforeMotor = [[0,0,0,0]]
 
@@ -35,7 +37,10 @@ def realMap(number, lowFirst, highFirst,lowSecond, highSecond):
     return newNumber
 
 def beep():
-	#beep on the buzzer
+	GPIO.output(buzzerPin, GPIO.HIGH)
+	time.sleep(.1)
+	GPIO.output(buzzerPin, GPIO.LOW)
+	time.sleep(.1)
 
 myCamera.start_recording('thrustCam.h264')
 
@@ -51,7 +56,7 @@ while True:
     z = realMap(accel_z, -1000, 1000, -9.81, 9.81)
 
     #Append these values so we can get the accelleration data
-    accelValsBeforeMotor.append([x,y,z])
+    accelValsBeforeMotor.append([x,y,z, currTime])
    	
 
     #Integrate Accelleratian over the flight time to get current velocity
