@@ -1,28 +1,28 @@
 ﻿absolute path:C:\Users\mneygri56\Documents\GitHub\Operation-Yeet-the-Pi\Rocket CAD\1
 init:1
-run_capture:0
+run_capture:1
 run_solver:1
-new_calc:0
+new_calc:1
 close_monitor:0
 run_convert:0
 isOK:1
-ForceNewCalc:0
-run_capture_prestate:0
+ForceNewCalc:1
+run_capture_prestate:1
 StartFldName:C:\Users\mneygri56\Documents\GitHub\Operation-Yeet-the-Pi\Rocket CAD\1\1.fld
 TransTimeMoments:
 TransFldNames:
 CurSelTranFld:0
 Trans:0
 UsePrevRes:0
-ForcetoRunCPT:0
+ForcetoRunCPT:1
 ComputerName:
-port:60460
+port:56705
 ProcessResults:1
 LoadLastResult:1
 ProcessorsToUse:0
 LoadBaseFLDFile:0
 BaseFLDFile:
-id:{5102DD0B-4928-44AC-AB00-20FA347AFE48}
+id:{FBF62339-BE7A-4374-813B-5437D3418FD3}
 calculation_state:15
 ForceContinue:0
-SolverProcessId:20940
+SolverProcessId:17880

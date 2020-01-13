@@ -48,12 +48,12 @@
 
         Basic Mesh Dimensions
                 Number of cells in X:   30
-                Number of cells in Y:   41
-                Number of cells in Z:   30
+                Number of cells in Y:   42
+                Number of cells in Z:   31
 
         Number Of Cells
-                Cells:   38512
-                Fluid cells:   38512
+                Cells:   40726
+                Fluid cells:   40726
                 Irregular cells:   0
                 Trimmed cells:   0
                 Maximum refinement level:   1
@@ -78,25 +78,21 @@
 
     Goals
                 
-                Name              	Unit   	Value   	Progress   	Criteria      	Delta           	Use in convergence 
-                GG Force (Y) 1    	N      	0.057   	100        	0.012150382   	0.00257733594   	On                 
-                Equation Goal 1   	N      	5.384   	100        	1.14214543    	0.2422716       	On                 
+                Name              	Unit   	Value      	Progress   	Criteria     	Delta         	Use in convergence 
+                GG Force (Y) 1    	N      	13.545     	100        	1.54766797   	0.252087213   	On                 
+                Equation Goal 1   	N      	1273.218   	100        	145.482003   	23.6963957    	On                 
 
     General Info
                 Run at:   CHSSIGMA-26859
                 Number of cores:   4
-                Iterations:   68
-                CPU time:   72 s
+                Iterations:   69
+                CPU time:   51 s
 
         Log
-                Mesh generation started	0:   11:30:31 , Dec 09
-                Mesh generation normally finished	0:   11:30:33 , Dec 09
-                Preparing data for calculation	0:   11:30:34 , Dec 09
-                Calculation started	0:   11:30:35 , Dec 09
-                Calculation has converged since the following criteria are satisfied:	68:   11:31:46 , Dec 09
-                    Goals are converged	68:   
-                Calculation finished	68:   11:31:47 , Dec 09
-                Preparing data for calculation	0:   11:35:55 , Dec 09
-                Calculation finished	68:   11:35:56 , Dec 09
-                Preparing data for calculation	0:   11:36:54 , Dec 09
-                Calculation finished	68:   11:36:54 , Dec 09
+                Mesh generation started	0:   11:16:13 , Jan 07
+                Mesh generation normally finished	0:   11:16:17 , Jan 07
+                Preparing data for calculation	0:   11:16:17 , Jan 07
+                Calculation started	0:   11:16:19 , Jan 07
+                Calculation has converged since the following criteria are satisfied:	69:   11:17:08 , Jan 07
+                    Goals are converged	69:   
+                Calculation finished	69:   11:17:09 , Jan 07
