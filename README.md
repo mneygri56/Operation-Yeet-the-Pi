@@ -196,7 +196,7 @@ Well, we made a batch, but it didn't really work. I couldn't really tell you why
 
 It made a really cool firey thing though
 #### 11/29
-We forgot about thankisgiving break, and we didn't accomplish everything we set out to do. We are thinking we can't start our rocket with the pi, so maybe just use a blowtorch, we'll see if the starters can actually start the rocket fuel, but we might need to use the blowtorch. 
+We forgot about thanksgiving break, and we didn't accomplish everything we set out to do. We are thinking we can't start our rocket with the pi, so maybe just use a blowtorch, we'll see if the starters can actually start the rocket fuel, but we might need to use the blowtorch. 
 
 In other news, we got a pretty good model of the rocket in solidworks, all we have to do now is add a servo so that we can take the top off whenever we want to.
 #### 12/6
@@ -206,7 +206,7 @@ We have most of a solidworks model, its not completely done, but we are close, j
 #### 1/10
 
 #### 1/17
-
+This week, we started revising the solidworks model so that it took the least amount of material to print, and it was as small as possible. We did this so that the boosters could lift the model, and so that it used not that much material. I feel like we are behind schedule, but I'll let it slide.
 #### 1/24
 
 #### 1/31
