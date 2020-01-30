@@ -186,6 +186,12 @@ Should have started this sooner, but here:
 
 <img src="https://github.com/mneygri56/Operation-Yeet-the-Pi/blob/master/Pictures/RocketOtherLaunch.PNG" alt="alt text" width="200" height="400">
 
+[Making Rust](https://youtu.be/RcKSFwdpVkA)
+
+[Testing Rocket](https://youtu.be/CEroAyz3F4E)
+
+[Another One](https://youtu.be/RToPVv3NRZM)
+
 ### Weekly Progress Report
 This starts from the first milestone, 11/22
 
