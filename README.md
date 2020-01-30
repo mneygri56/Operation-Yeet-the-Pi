@@ -104,6 +104,30 @@ Cost Turned out to be about $23
 - Week Nineteen 3/2 - 3/6:
   + Submit and Finish
   + We might be able to combine Eighteen and Nineteen
+  
+Well, a natural part of the engineering processs is revising. This schedule does not reflect how much testing we have to do, and how long the solidworks would take to finish. I think we have been a bit distracted, but We are still trying to finish by the end date of March 6th.
+
+- Week 14: 1/27-1/31
+  + I'd like to finish the solidworks model this week so that we can talk it over with Dr. Shields and finish revising it and print it.
+  + Make Rust and Test it
+- Week 15: 2/3-2/7
+  + Revise the solidworks and hopefully be ready to print it
+  + Make some rocket fuel with the rust, try to get 40-50g thrust
+- Week 16: 2/10-2/14
+  + Finalize the fuel mixture and fill boosters
+  + Make sure code is ready to go
+  + Prep for launch
+- Week 17: 2/17-2/21
+  + Launch on Feb 18th
+  + See what worked, update wiki with pics and vids
+- Week 18: 2/24-2/28
+  + David will be gone
+  + Keep Updating Wiki
+  + Change code if necessary
+- Week 19: 3/2-3/6
+  + Submit and Finish
+  + Same end date as before
+  
 ## Safety
 I know our wikis and stuff are known for a bit of fun and jokes, but this part is serious, professional, and must not be joked around with.
 
@@ -112,8 +136,6 @@ There are multiple danger points in this project. This project can definitely go
 ### Making the Fuel
 This is probably the most dangerous part. We are going to be heating up flammable materials to get them to congeal into a solid block. [Here](https://www.wikihow.com/Make-Rocket-Fuel?scrlybrkr=71c97d6e) is the procedure for making the fuel and [here](http://www.jamesyawn.net/rcandy/safety.htm) is one of the best places to see the risks and danger points involved. The most dangerous part of making the fuel according to this source is scraping the fuel and shaping it. I agree, we must be careful and wear gloves. Additionally, here more precautions that must be taken:
 
-- Wear Gloves: Potassium Nitrate is a skin irritant and can easily become a problem.
-- Wear Respirators: Potassium Nitrate is also a lung irritant. We must be careful so as not to inhale any dust from it.
 - Have an ABC fire extinguisher on hand in case fire breaks out. Worst case scenario is that fire breaks out in the pan and we are close to it. The first thing that must be done in case of this is to put out the fire. This reaction is self sustaining and powerful, so we cannot rely on just the heat being turned off.
   - Two people must be on hand while cooking, ideally three. One to cook the mixture, one to get help in case of a fire and the person cooking is incapacitated, and one to put out the fire. All jobs are important, but the two most important are the cooking and putting out the fire, getting help can be taken care of by the person cooking if they are not incapacitated by the fire from the mixture.
 - Do all of it outside, it will minimize damage if fire breaks out, and will provide an easy way for the fumes to escape without harming us.
