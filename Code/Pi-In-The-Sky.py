@@ -32,6 +32,10 @@ GPIO.setup(buzzerPin, GPIO.OUT)
 accelValsBeforeMotor = [[0,0,0,0]]
 
 beeped = False
+
+#make a file to log accelleration data:
+f= open("Accel_From"+start_time+".txt"m "w+")
+
 #make a map function for the servo and acsellerometer values
 def realMap(number, lowFirst, highFirst,lowSecond, highSecond):
 	newNumber =(number-lowFirst)/(highFirst-lowFirst)*(highSecond-lowSecond)+lowSecond
@@ -58,7 +62,7 @@ while currTime<40:
 
     #Append these values so we can get the accelleration data
     accelValsBeforeMotor.append([x,y,z, currTime])
-    print(str(x)+", "+str(y)+", "+str(z)+" ,"+str(currTime))
+    f.write(str(x)+", "+str(y)+", "+str(z)+" ,"+str(currTime)+"\n")
     #If the velocity is low, beep
     if currTime>20 and not beeped:
     	beep()
@@ -82,3 +86,4 @@ while currTime<40:
     #if(time.time()-start_time>180):
     #	myCamera.stop_recording()
 GPIO.cleanup()
+f.close()
