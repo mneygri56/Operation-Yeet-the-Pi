@@ -67,7 +67,6 @@ while currTime<40:
     if currTime>20 and not beeped:
     	beep()
     	beeped = True
-
     #set the servo position and map it to the duty cycle so it can be used
     if(currTime>20):
     	servoPos = 180
