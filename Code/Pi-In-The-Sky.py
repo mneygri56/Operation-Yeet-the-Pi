@@ -4,9 +4,12 @@ import Adafruit_LSM303
 from picamera import PiCamera
 import RPi.GPIO as GPIO
 import math
+import Wire.h
+import adafruit_mpl3115a2.h
 
 #Initialize the accellerometer
 lsm303 = Adafruit_LSM303.LSM303()
+sensor = adafruit_mpl3115a2.MPL3115A2()
 
 #Initialize the camera
 #myCamera = PiCamera()
@@ -31,6 +34,8 @@ GPIO.setup(buzzerPin, GPIO.OUT)
 
 accelValsBeforeMotor = [[0,0,0,0]]
 
+sensor.sealevel_pressure = 102250
+
 beeped = False
 
 #make a file to log accelleration data:
@@ -52,7 +57,7 @@ currTime = time.time()-start_time
 while currTime<40:
     #get the current time
     currTime = time.time()-start_time
-
+    pressure = sensor.pressure
     #get the accelllerometor values and map them to m/s^2
     accel, mag = lsm303.read()
     accel_x, accel_y, accel_z = accel
