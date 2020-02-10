@@ -134,7 +134,7 @@ I know our wikis and stuff are known for a bit of fun and jokes, but this part i
 There are multiple danger points in this project. This project can definitely go wrong. We must act with utmost care and respect for all of the forces and materials involved.
 
 ### Making the Fuel
-This is probably the most dangerous part. We are going to be heating up flammable materials to get them to congeal into a solid block. [Here](https://www.wikihow.com/Make-Rocket-Fuel?scrlybrkr=71c97d6e) is the procedure for making the fuel and [here](http://www.jamesyawn.net/rcandy/safety.htm) is one of the best places to see the risks and danger points involved. The most dangerous part of making the fuel according to this source is scraping the fuel and shaping it. I agree, we must be careful and wear gloves. Additionally, here more precautions that must be taken:
+This is probably the most dangerous part. We are going to be heating up flammable materials to get them to congeal into a solid block. [Here](https://www.wikihow.com/Make-Rocket-Fuel?scrlybrkr=71c97d6e) is the procedure for making the fuel and [here](http://www.jamesyawn.net/rcandy/safety.htm) is one of the best places to see the risks and danger points involved. The most dangerous part of making the fuel according to this source is scraping the fuel and shaping it. I agree, and we must be careful. Additionally, here more precautions that must be taken:
 
 - Have an ABC fire extinguisher on hand in case fire breaks out. Worst case scenario is that fire breaks out in the pan and we are close to it. The first thing that must be done in case of this is to put out the fire. This reaction is self sustaining and powerful, so we cannot rely on just the heat being turned off.
   - Two people must be on hand while cooking, ideally three. One to cook the mixture, one to get help in case of a fire and the person cooking is incapacitated, and one to put out the fire. All jobs are important, but the two most important are the cooking and putting out the fire, getting help can be taken care of by the person cooking if they are not incapacitated by the fire from the mixture.
@@ -155,30 +155,44 @@ This is the other part where things can go wrong. A stray launch can go into som
    - Piezo Buzzer
    - Pi
    - Wires
+   - Altimeter
    - battery
-   - GPS unit
 - What additives should we test?
-  - Rust Powder Perhaps
+  - Rust Powder 
 - What should we make the chassis out of? The engine housing? Pi camera housing? Others?
   - Metal
-  - Undecided
   - Foam
+  - ABS-PC
 - Parachute? If so, how will it deploy? If not, how do we reduce the risk of crashing and burning? Use McIntire Park? Milton Airfield? What permits, if any, will we need to do it at these places?
-  - Lithobraking
   - propellor? (probably not)
   - "Nerf Sword" prinicple
     - Plastic Shell covered in foam (metal)
+  - actual parachute
 - How are we going to reduce weight so it gets as high as possible?
   - Skeletonized Parts
   - Bare Minimum Wires
   - Plastic
+## Rocket Specs
+
+### Fuel Info
+The fuel is made of Potassium Nitrate, sucrose, and brown iron rust at a ratio of 65:35:1. The general process is to heat up the three ingredients until the sugar and potassium nitrate melt to create a liquidy substance, stirring constantly. The beaker is then taken off the heat and the fuel is scooped into the rocket booster. It is then packed by tamping it with the head of a nail. After talking to a rocket person, This process may be revised to packing the fuel into a cardboard tube to make an engine before actually placing the motor into the ABS-PC receptacle. 
+
+### Grain Geometry
+The grain geometry is an important consideration when assessing burn rates and thrust. We have been using a simple flat surface, but we have been considering drilling a hole in the middle of the engine to have larger thrust on liftoff, and the thrust will increase over the flight.
+
+### Fuselage Info
+The fuselage is made of a cylinder of ABS PC with a hole in the middle for the raspberry pi, recovery servo, and other sensors. More information is in the solidworks models, or in the pictures section.
+
+### Recovery
+We are planning to use a parachute from an estes kit to recover the rocket. The recovery servo will push the platform that the parachute is resting on up so that the parachute will pull away from the top as the rocket slows down at the top of its arc. For this reason, there is no nose cone. This acts as a fail safe if the rocket starts going out of control, the parachute will fall away from the rocket and deploy because the parachute was being held on by the speed that the rocket was going.
+
+### Nozzle
+The nozzle is a piece of ABS-PC that covers the end of the engine with a 10mm hole in the middle.
 
 ## Sources
 I have a feeling I will be referencing this a lot:
 
 Munroe, Randall. “Rocket Golf.” Rocket Golf, Xkcd, [Rocket Golf](what-if.xkcd.com/85/).
-
-Johnson, Lee. “How to Calculate the Force of a Falling Object.” Sciencing, 2 Mar. 2019, [sciencing.com/calculate-force-falling-object-6454559.html](https://sciencing.com/calculate-force-falling-object-6454559.html).
 
 Nakka, Richard. “Determining Total Impulse and Specific Impulse from Static Test Data.” Richard Nakka's Experimental Rocketry Site, 2000, [www.nakka-rocketry.net/impcalc.html](www.nakka-rocketry.net/impcalc.html).
 
