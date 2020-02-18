@@ -118,16 +118,15 @@ Well, a natural part of the engineering processs is revising. This schedule does
   + Make sure code is ready to go
   + Prep for launch
 - Week 17: 2/17-2/21
-  + Launch on Feb 18th
-  + See what worked, update wiki with pics and vids
+  + Get ready to assemble, update wiki with pics and vids
 - Week 18: 2/24-2/28
   + David will be gone
-  + Keep Updating Wiki
-  + Change code if necessary
+  + Prep for launch, print stuff and get ready
 - Week 19: 3/2-3/6
+  + Launch on wed
+  + Cool! Fun
+- Week 20:
   + Submit and Finish
-  + Same end date as before
-  
 ## Safety
 I know our wikis and stuff are known for a bit of fun and jokes, but this part is serious, professional, and must not be joked around with.
 
