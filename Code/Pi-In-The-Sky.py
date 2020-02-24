@@ -57,7 +57,12 @@ currTime = time.time()-start_time
 while currTime<40:
     #get the current time
     currTime = time.time()-start_time
+
+    #read pressure, altitude, and temperature apparently from the altimeter
     pressure = sensor.pressure
+    altitude = sensor.altitiude
+    temperature = sensor.temperature
+
     #get the accelllerometor values and map them to m/s^2
     accel, mag = lsm303.read()
     accel_x, accel_y, accel_z = accel
@@ -66,14 +71,15 @@ while currTime<40:
     z = realMap(accel_z, -1000, 1000, -9.81, 9.81)
 
     #Append these values so we can get the accelleration data
-    accelValsBeforeMotor.append([x,y,z, currTime])
-    f.write(str(x)+", "+str(y)+", "+str(z)+" ,"+str(currTime)+"\n")
+    f.write(str(x)+" (x)m/s^2, "+str(y)+" (y)m/s^2, "+str(z)
+    	+" (z)m/s^2,\n"+str(pressure/1000)+"kPa\n"+str(altitude)+"m\n"+str(teperature)
+    	+"deg C\n"+str(currTime)+"seconds\n")
     #If the velocity is low, beep
-    if currTime>20 and not beeped:
+    if currTime>30 and not beeped:
     	beep()
     	beeped = True
     #set the servo position and map it to the duty cycle so it can be used
-    if(currTime>20):
+    if(currTime>30):
     	servoPos = 180
 
     	parachuteServoPos = 180
