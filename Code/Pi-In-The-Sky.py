@@ -4,27 +4,37 @@ import Adafruit_LSM303
 from picamera import PiCamera
 import RPi.GPIO as GPIO
 import math
-import Wire.h
-import adafruit_mpl3115a2.h
+import smbus
 
+# Get I2C bus
+bus = smbus.SMBus(1)
+
+# MPL3115A2 address, 0x60(96)
+# Select control register, 0x26(38)
+#		0xB9(185)	Active mode, OSR = 128, Altimeter mode
+bus.write_byte_data(0x60, 0x26, 0xB9)
+# MPL3115A2 address, 0x60(96)
+# Select data configuration register, 0x13(19)
+#		0x07(07)	Data ready event enabled for altitude, pressure, temperature
+bus.write_byte_data(0x60, 0x13, 0x07)
+# MPL3115A2 address, 0x60(96)
+# Select control register, 0x26(38)
+#		0xB9(185)	Active mode, OSR = 128, Altimeter mode
+bus.write_byte_data(0x60, 0x26, 0xB9)
+
+time.sleep(1)
 #Initialize the accellerometer
 lsm303 = Adafruit_LSM303.LSM303()
-sensor = adafruit_mpl3115a2.MPL3115A2()
 
 #Initialize the camera
-#myCamera = PiCamera()
+myCamera = PiCamera()
 
 #Get the starting time
 start_time = time.time()
 
 #Initialize the servo
-servoPIN = 17
+parachuteServoPin = 17
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(servoPIN, GPIO.OUT)
-p = GPIO.PWM(servoPIN, 50) # GPIO 17 for PWM with 50Hz
-p.start(2.5) #Initialize to 90
-
-parachuteServoPin = 18
 GPIO.setup(parachuteServoPin, GPIO.OUT)
 p2 = GPIO.PWM(parachuteServoPin, 50) # GPIO 18 for PWM with 50Hz
 p2.start(2.5) #Initialize to 90
@@ -34,12 +44,16 @@ GPIO.setup(buzzerPin, GPIO.OUT)
 
 accelValsBeforeMotor = [[0,0,0,0]]
 
-sensor.sealevel_pressure = 102250
-
 beeped = False
-
+secsPerYear = 60*60*24*365
 #make a file to log accelleration data:
-f= open("Accel_From"+start_time+".txt"m "w+")
+startYear = 1970 + math.floor(start_time/31556926)
+startMonth = math.floor((start_time%31556926)/2629743)
+startDay = math.floor(((start_time%31556926)%2629743)/86400)
+startHr = math.floor((((start_time%31556926)%2629743)%86400)/3600)
+startMin = math.floor(((((start_time%31556926)%2629743)%86400)%3600)/60)
+startSec = math.floor(((((start_time%31556926)%2629743)%86400)%3600)%60)
+f= open("Accel_From"+str(startMonth)+"."+str(startDay)+"."+str(startYear)+", "+str(startHr)+"."+str(startMin)+"."+str(startSec)+".txt", "w+")
 
 #make a map function for the servo and acsellerometer values
 def realMap(number, lowFirst, highFirst,lowSecond, highSecond):
@@ -52,48 +66,73 @@ def beep():
 	GPIO.output(buzzerPin, GPIO.LOW)
 	time.sleep(.1)
 #Start recording the camera
-#myCamera.start_recording('thrustCam.h264')
+myCamera.start_recording('thrustCam'+str(startMonth)+"."+str(startDay)+"."+str(startYear)+", "+str(startHr)+"."+str(startMin)+"."+str(startSec)+'.h264')
+myCamera.start_preview(alpha = 155)
 currTime = time.time()-start_time
-while currTime<40:
-    #get the current time
-    currTime = time.time()-start_time
+while currTime<120:
+             data = bus.read_i2c_block_data(0x60, 0x00, 6)
+             # MPL3115A2 address, 0x60(96)
+             # Select control register, 0x26(38)
+             #		0xB9(185)	Active mode, OSR = 128, Altimeter mode
+             bus.write_byte_data(0x60, 0x26, 0xB9)
+             # MPL3115A2 address, 0x60(96)
+             # Select data configuration register, 0x13(19)
+             #		0x07(07)	Data ready event enabled for altitude, pressure, temperature
+             bus.write_byte_data(0x60, 0x13, 0x07)
+             # MPL3115A2 address, 0x60(96)
+             # Select control register, 0x26(38)
+             #		0xB9(185)	Active mode, OSR = 128, Altimeter mode
+             bus.write_byte_data(0x60, 0x26, 0xB9)
+             time.sleep(1)
+             # Convert the data to 20-bits
+             data = bus.read_i2c_block_data(0x60, 0x00, 6)
+             tHeight = ((data[1] * 65536) + (data[2] * 256) + (data[3] & 0xF0)) / 16
+             temp = ((data[4] * 256) + (data[5] & 0xF0)) / (16)
+             altitude = tHeight / (16.0)
+             cTemp = temp / 16.0
+             fTemp = cTemp * 1.8 + 32
+             # MPL3115A2 address, 0x60(96)
+             # Select control register, 0x26(38)
+             #		0x39(57)	Active mode, OSR = 128, Barometer mode
+             bus.write_byte_data(0x60, 0x26, 0x39)
 
-    #read pressure, altitude, and temperature apparently from the altimeter
-    pressure = sensor.pressure
-    altitude = sensor.altitiude
-    temperature = sensor.temperature
+             time.sleep(1)
+             # MPL3115A2 address, 0x60(96)
+             # Read data back from 0x00(00), 4 bytes
+             # status, pres MSB1, pres MSB, pres LSB
+             data = bus.read_i2c_block_data(0x60, 0x00, 4)
+             # Convert the data to 20-bits
+             pres = ((data[1] * 65536) + (data[2] * 256) + (data[3] & 0xF0)) / 16
+             pressure = (pres / 4.0) / 1000
+             #get the current time
+             currTime = time.time()-start_time
 
-    #get the accelllerometor values and map them to m/s^2
-    accel, mag = lsm303.read()
-    accel_x, accel_y, accel_z = accel
-    x = realMap(accel_x, -1000, 1000, -9.81, 9.81)
-    y = realMap(accel_y, -1000, 1000, -9.81, 9.81)
-    z = realMap(accel_z, -1000, 1000, -9.81, 9.81)
 
-    #Append these values so we can get the accelleration data
-    f.write(str(x)+" (x)m/s^2, "+str(y)+" (y)m/s^2, "+str(z)
-    	+" (z)m/s^2,\n"+str(pressure/1000)+"kPa\n"+str(altitude)+"m\n"+str(teperature)
-    	+"deg C\n"+str(currTime)+"seconds\n")
-    #If the velocity is low, beep
-    if currTime>30 and not beeped:
-    	beep()
-    	beeped = True
-    #set the servo position and map it to the duty cycle so it can be used
-    if(currTime>30):
-    	servoPos = 180
+             #get the accelllerometor values and map them to m/s^2
+             accel, mag = lsm303.read()
+             accel_x, accel_y, accel_z = accel
+             x = realMap(accel_x, -1000, 1000, -9.81, 9.81)
+             y = realMap(accel_y, -1000, 1000, -9.81, 9.81)
+             z = realMap(accel_z, -1000, 1000, -9.81, 9.81)
 
-    	parachuteServoPos = 180
-    else:
-    	servoPos = 90
-
-    	parachuteServoPos = 0
-    dutyCycle = realMap(servoPos, 0, 180, 1, 2)#If duty cycle is 1 angle is  0, 2 angle is 180
-    p.ChangeDutyCycle(dutyCycle)
-    parachuteCycle = realMap(parachuteServoPos, 0, 180, 1, 2)
-    p2.ChangeDutyCycle(parachuteCycle)
-
-    #Record video for three minutes
-    #if(time.time()-start_time>180):
-    #	myCamera.stop_recording()
+             #Append these values so we can get the accelleration data
+             f.write(str(x)+" (x)m/s^2, "+str(y)+" (y)m/s^2, "+str(z)
+                +" (z)m/s^2,\n"+str(pressure)+"kPa\n"+str(altitude)+"m\n"
+                +str(cTemp)+"deg C\n"+str(currTime)+"seconds\n")
+             f.flush()
+             #If the velocity is low, beep
+             if currTime>30 and not beeped:
+                beep()
+                beeped = True
+             #set the servo position and map it to the duty cycle so it can be used
+             if(currTime>30):
+                parachuteServoPos = 90
+             else:
+                parachuteServoPos = 0
+             parachuteCycle = realMap(parachuteServoPos, 0, 180, 2.5, 12.5)
+             p2.ChangeDutyCycle(parachuteCycle)
+myCamera.stop_recording()
+myCamera.stop_preview()
 GPIO.cleanup()
+p2.stop()
 f.close()
