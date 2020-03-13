@@ -1,0 +1,27 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=Untitled Sketch
+*Date=16:41:27
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;146.379;-52.608;0;Bottom;Via8
+2;;;143.839;-44.9881;0;Bottom;J1
+3;;;123.35;-46.3491;90;Bottom;MCU1
+4;;;141.299;-52.608;0;Bottom;Via7
+5;1.9 to 3.6V;;126.567;-64.0381;180;Bottom;Part1
+6;;;108.279;-14.5081;0;Bottom;Via6
+7;;;143.839;-65.308;0;Bottom;Via1
+8;;;148.919;-14.5081;0;Bottom;Via3
+9;;;108.279;-98.3281;0;Bottom;Via5
+10;;;148.919;-98.3281;0;Bottom;Via4
+11;;;131.139;-88.1681;0;Bottom;U1
+12;;;143.839;-70.388;0;Bottom;Via2
